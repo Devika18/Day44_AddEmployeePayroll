@@ -18,8 +18,8 @@
         </div>
     </header>
     <!--UC2 Ability to create a Form Header and the Input Text Element for Name-->
-    <div class="form-content">
-        <form class="form" action="#" onsubmit="save();return false">
+    <div id="formId" class="form-content">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
         <div class="form-head">
             <h2>Employee Payroll Form</h2>
         </div>
@@ -33,28 +33,28 @@
             <label class="label text" for="profile">Profile image</label>
             <div class="profile-radio-content">
                 <label>
-                    <input type="radio" id="profile1" name="profile" value="./profilePic/Ellipse -1.png" required>
-                    <img class="profile" id="image1" src="./profilePic/Ellipse -1.png">
+                    <input type="radio" id="profile1" name="profile" value="Ellipse -1.png" required>
+                    <img class="profile" id="image1" src="profilePic/Ellipse -1.png">
                 </label>
                 <label>
-                    <input type="radio" id="profile2" name="profile" value="./profilePic/Ellipse -2.png" required>
-                    <img class="profile" id="image2" src="./profilePic/Ellipse -2.png">
+                    <input type="radio" id="profile2" name="profile" value="Ellipse -2.png" required>
+                    <img class="profile" id="image2" src="profilePic/Ellipse -2.png">
                 </label>
                 <label>
-                    <input type="radio" id="profile3" name="profile" value="./profilePic/Ellipse -3.png" required>
-                    <img class="profile" id="image2" src="./profilePic/Ellipse -3.png">
+                    <input type="radio" id="profile3" name="profile" value="Ellipse -3.png" required>
+                    <img class="profile" id="image2" src="profilePic/Ellipse -3.png">
                 </label>
                 <label>
-                    <input type="radio" id="profile4" name="profile" value="./profilePic/Ellipse -4.png" required>
-                    <img class="profile" id="image4" src="./profilePic/Ellipse -4.png">
+                    <input type="radio" id="profile4" name="profile" value="Ellipse -4.png" required>
+                    <img class="profile" id="image4" src="profilePic/Ellipse -4.png">
                 </label>
                 <label>
-                    <input type="radio" id="profile5" name="profile" value="./profilePic/Ellipse -5.png" required>
-                    <img class="profile" id="image5" src="./profilePic/Ellipse -5.png">
+                    <input type="radio" id="profile5" name="profile" value="Ellipse -5.png" required>
+                    <img class="profile" id="image5" src="profilePic/Ellipse -5.png">
                 </label>
                 <label>
-                    <input type="radio" id="profile6" name="profile" value="./profilePic/Ellipse -6.png" required>
-                    <img class="profile" id="image6" src="./profilePic/Ellipse -6.png">
+                    <input type="radio" id="profile6" name="profile" value="Ellipse -6.png" required>
+                    <img class="profile" id="image6" src="profilePic/Ellipse -6.png">
                 </label>
             </div>
         </div>
@@ -140,6 +140,7 @@
                 <option value="Dec">December</option>
             </select>
             <select id="year" name="Year">
+                <option value="2023">2023</option>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>
